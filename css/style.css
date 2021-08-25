@@ -12,7 +12,7 @@ body {
 #hero {
   background-image: url('../img/element.svg');
   background-repeat: no-repeat;
-  background-position: 47px 183px;
+  background-position: -25px 183px;
 }
 
 header {
@@ -120,6 +120,16 @@ ul {
 .advert{
   align-items: center;
   display: flex;
+  position: relative;
+}
+.advert::after{
+  content: "";
+  display: inline-block;
+  background-image: url('../img/macbook.svg');
+  width: 800px;
+  height: 600px;
+  position: absolute;
+  left: 533px;
 }
 .advert-titles{
   width: 515px;
@@ -451,7 +461,7 @@ box-shadow: 15px 25px 60px -5px rgba(0, 0, 0, 0.1);
   background-image: url('../img/check-img.png');
   height: 561px;
   background-repeat: no-repeat;
-  background-position: 700px 41px;
+  background-position: 625px 41px;
 }
 .check{
   align-items: center;
@@ -789,4 +799,69 @@ h3.c-item-title {
 }
 .news-img{
   width: 370px;
+}
+.ftr{
+  width: 1170px;
+  height: 56px;
+  border-top: 1px solid #CCCCCC;
+}
+.ftr-text{
+  text-align: center;
+  width: 339px;
+  font-size: 16px;
+  line-height: 230%;
+  color: #888888;
+}
+.clmn{
+  padding: 106px 50px 50px 0;
+}
+.column1{
+  width: 270px;
+  height: 248px;
+  margin-right: 30px;
+}
+.col1ul{
+  width: 138px;
+  height: 30px;
+}
+.column1-text{
+  margin-top: 40px;
+  margin-bottom: 8px;
+  font-size: 16px;
+  line-height: 160%;
+  color: #666666;
+}
+.column2-list{
+  width: 156px;
+  height: 257px;
+}
+.column2-item{
+  margin-right: 144px;
+}
+.column-title{
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 160%;
+  color: #000000;
+  margin-bottom: 34px;
+}
+.column2-link{
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 230%;
+  color: #666666;
+  margin-bottom: 30px;
+}
+.column3{
+  width: 219px;
+  height: 204px;
+}
+.column3-text{
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 150%;
+  color: #000;
+}
+.column3-link{
+  color: #333333;
 }
